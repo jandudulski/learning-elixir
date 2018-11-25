@@ -1,0 +1,1 @@
+In the section Adding Boundaries, we added a depth restriction to limit how many directories deep our module should dive. Now create a `BreadthNavigator` module that has a breadth constraint; it will be the maximum number of sibling directories it can navigate.

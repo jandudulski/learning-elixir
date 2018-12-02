@@ -21,9 +21,7 @@ defmodule Checksum do
     diff = String.myers_difference(left, right)
     keys = Keyword.keys(diff)
 
-    Enum.count(keys, &(&1 == :del)) == 1
-    && Enum.count(keys, &(&1 == :ins)) == 1
-    && String.length(diff[:del]) == 1
-    && String.length(diff[:ins]) == 1
+    Enum.count(keys, &(&1 == :del)) == 1 && Enum.count(keys, &(&1 == :ins)) == 1 &&
+      String.length(diff[:del]) == 1 && String.length(diff[:ins]) == 1
   end
 end

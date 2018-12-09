@@ -15,7 +15,7 @@ defmodule Day6 do
       ...>  "5, 5",
       ...>  "8, 9",
       ...> ], 32)
-      16
+      15
   """
   @spec find_largest_region(list, distance) :: integer
   def find_largest_region(list, limit) do

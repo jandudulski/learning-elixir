@@ -29,7 +29,7 @@ defmodule Day9 do
     {_, _, _, points, _} =
       2..last_marble
       |> Enum.reduce({[0], 1, [], points, 0}, fn marble, {behind, current, infront, points, player} ->
-        IO.inspect(marble, label: "Current marble")
+        # IO.inspect(marble, label: "Current marble")
         {score, behind, current, infront} = insert_marble(marble, behind, current, infront)
         points = Map.update!(points, player, &(&1 + score))
 
